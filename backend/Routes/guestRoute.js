@@ -10,7 +10,7 @@ const { body, validationResult } = require('express-validator');
 
 // app.get('/api', (req, res) => res.send('Its working!'));
 
-router.get('/fetchguest', async (req, res) => {
+router.get('https://new-project-hotel.herokuapp.com/fetchguest', async (req, res) => {
     try {
         const guest = await Guest.find({});
         res.json(guest)
@@ -22,7 +22,7 @@ router.get('/fetchguest', async (req, res) => {
 
 
 
-      router.post('/createguest', [
+      router.post('https://new-project-hotel.herokuapp.com/createguest', [
         body('name', 'Enter a valid name').isLength({ min: 3 }),
         body('phone', 'password must be atleast 5 characters').isLength({ min: 5 }),], async  (req, res) => {
         try {
@@ -50,7 +50,7 @@ router.get('/fetchguest', async (req, res) => {
 
 
 //           // ROUTE 4: Delete an existing employee using: DELETE "/api/notes/deletenote". Login required
-router.delete('/deleteguest/:id',  async (req, res) => {
+router.delete('https://new-project-hotel.herokuapp.com/deleteguest/:id',  async (req, res) => {
     try {
         // Find the note to be delete and delete it
         // let employee = await Employee.findById(req.params.id);

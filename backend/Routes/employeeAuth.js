@@ -49,7 +49,7 @@ router.get('/fetchemployee', async (req, res) => {
     //       });
 
 
-    router.post("/createemployee",
+    router.post("https://new-project-hotel.herokuapp.com/createemployee",
     [
       body("name", "Enter a valid name").isLength({ min: 3 }),
       body("email", "Enter a valid Email").isEmail(),
@@ -112,7 +112,7 @@ router.get('/fetchemployee', async (req, res) => {
 // ROUTE 2: Authenticate a User using: POST "/api/auth/login". No login required
 
 
-router.post('/login', [
+router.post('https://new-project-hotel.herokuapp.com/login', [
     body('email', 'Enter a valid email').isEmail(),
     body('password', 'Password cannot be blank').exists(),
   ], async (req, res) => {
@@ -152,7 +152,7 @@ router.post('/login', [
       res.status(500).send("Internal Server Error");
     }
    // To Get Employee Details By Employee ID
- router.route('/fetchuserid/:id').get(function (req, res) {
+ router.route('https://new-project-hotel.herokuapp.com/fetchuserid/:id').get(function (req, res) {
   let id = req.params.id;
   Employee.findById(id, function (err, employee) {
   res.json(employee);
