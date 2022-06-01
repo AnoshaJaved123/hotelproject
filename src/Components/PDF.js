@@ -18,7 +18,7 @@ const PDF = (props) => {
                
                <div className="card text-center" style={{ width: '18rem' }}>
                <h4>Hotel Bill Receipt</h4>
-                   <img src={img1} className="card-img-top" alt="..." />
+                   <img src={img1} className="card-img-top" alt="" />
                    <div className="card-body">
                        <h5 className="card-title">{props.name}</h5>
                        <p className="card-text">Thank you for staying in our Hotel. Hope you will visit us again.</p>

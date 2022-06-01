@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import img2 from '../Components/Style/user.png'
 import img1 from '../Components/Style/hotel2.png'
 
-import style from './Style/style.css'
 
 const Logintwo = (props) => {
   // const notify = () => toast("Wow so easy!");
@@ -59,13 +58,13 @@ const Logintwo = (props) => {
 
         <div className='row shadow p-3 mb-5 bg-white rounded'>
           <div className='col-md-6 mx-1'>
-            <img src={img1} />
+            <img src={img1} alt='' />
             <div>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
           </div>
 
           <div className='col-md-5 mx-1  my-4  '>
 
-            <img className='image' src={img2} style={{ width: '27%' }} />
+            <img className='image' alt='' src={img2} style={{ width: '27%' }} />
             <h2 className='center' style={{ color:"#873cb3" }}>User Login</h2>
 
 

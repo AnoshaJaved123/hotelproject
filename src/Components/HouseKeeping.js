@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { createhk, deletehk, gethkAll } from '../Redux/features/housekeepingSlice'
-import { useNavigate } from 'react-router-dom'
 import Navbar from './Navbar';
 
 // import GuestItem from './GuestItem'
@@ -9,12 +8,10 @@ import Navbar from './Navbar';
 
 function HouseKeeping() {
 
-  const navigate = useNavigate();
 
   const dispatch = useDispatch()
   const housekeeping = useSelector(state => state.appThree.housekeeping)
   const [values, setValues] = useState({ name: "", room: "", status: "" });
-  const [showhk, setShowhk] = useState(false);
   const { name, status, room } = values;
 
   useEffect(() => {

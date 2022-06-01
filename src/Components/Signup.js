@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createemp } from '../Redux/features/signupSlice'
-import style from './Style/style.css'
 import img2 from '../Components/Style/user.png'
 import img1 from '../Components/Style/hotel2.png'
 
@@ -29,13 +28,13 @@ const Signup = (props) => {
 
         <div className='row shadow p-3 mb-5 bg-white rounded'>
           <div className='col-md-6 mx-1'>
-            <img src={img1} />
+            <img src={img1} alt='' />
             <div>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
           </div>
 
           <div className='col-md-5 mx-1  my-4  '>
 
-            <img className='image' src={img2} style={{ width: '27%' }} />
+            <img className='image' src={img2} alt='' style={{ width: '27%' }} />
             <h2 className='center' style={{ color:"#873cb3" }}>Sign Up</h2>
 
 

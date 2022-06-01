@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createRooms } from '../Redux/features/roomSlice'
 import Navbar from "./Navbar";
@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 function Rooms() {
 
   const [values, setValues] = useState({ name: "", member: "", roomnumber: "", roomtype: "Single Room", extradisp: "" });
+  // eslint-disable-next-line
   const [showRooms, setshowRooms] = useState(false);
 
   // const { loading, rooms } = useSelector((state) => ({ ...state.appTwo }));
