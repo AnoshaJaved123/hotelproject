@@ -27,7 +27,7 @@ const Home = () => {
     <Navbar/>
     <div className='container text-center'>
       <h3>Add Booking</h3>
-      <a href="/#" onClick={()=>{navigate('/rooms')}} className="btn btn-light" type="button" style={{ background: " #873cb3", color:"white" }}> Reserve</a>
+      <button onClick={()=>{navigate('/rooms')}} className="btn btn-light" type="button" style={{ background: " #873cb3", color:"white" }}> Reserve</button>
     </div>
     <hr />
     
@@ -61,7 +61,7 @@ const Home = () => {
                     <h5 className="card-title">{rooms.name}</h5>
                       <p className="card-text">{rooms.extradisp}</p>
 
-                      <a href="/#"  onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</a>
+                      <button onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</button>
                     </div>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const Home = () => {
                       <h5 className="card-title">{rooms.name}</h5>
                       <p className="card-text">{rooms.extradisp}</p>
 
-                      <a href="/#" onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</a>
+                      <button onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</button>
                     </div>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ const Home = () => {
                       <h5 className="card-title">{rooms.name}</h5>
                       <p className="card-text">{rooms.extradisp}</p>
 
-                      <a href="/#" onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</a>
+                      <button onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill');  window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</button>
                     </div>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ const Home = () => {
                       <h5 className="card-title">{rooms.name}</h5>
                       <p className="card-text">{rooms.extradisp}</p>
 
-                      <a href="/#" onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill'); window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</a>
+                      <button onClick={()=>{ dispatch(deleteroom({id:rooms._id})); navigate('/bill'); window.location.reload(); }} className="btn  btn-outline-danger btn-sm mx-2"><i class="fa-solid fa-receipt mx-2"></i>Check Out</button>
                     </div>
                   </div>
                 </div>

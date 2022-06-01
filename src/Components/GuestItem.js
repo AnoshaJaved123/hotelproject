@@ -57,7 +57,7 @@ import Navbar from './Navbar';
                <p className="card-text">  <i className="fa-solid fa-phone mx-2" style={{color:"green" }}></i>{guests.phone}</p>
                <p className="card-text"><i className="fa-solid fa-at mx-2" style={{color:"blue" }}></i>{guests.email}</p>
 
-               <a href="/#" onClick={()=>{ dispatch(deleteguest({id:guests._id}));  window.location.reload();  }} className="btn  btn-outline-danger"><i className="fa-solid fa-trash-can mx-1" style={{color:"red" }}></i>Delete</a>
+               <button onClick={()=>{ dispatch(deleteguest({id:guests._id}));  window.location.reload();  }} className="btn  btn-outline-danger"><i className="fa-solid fa-trash-can mx-1" style={{color:"red" }}></i>Delete</button>
              </div>
              <hr />
              <div className='row'>
