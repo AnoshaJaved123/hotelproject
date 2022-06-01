@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
 import Guest from "./Components/Guest"
 
 import {
@@ -19,8 +20,7 @@ function App() {
   
       return (
         <Router>
-        
-       
+        <Navbar/>
         <Routes>
       <Route exact path="/" element={<Logintwo/>}></Route>
 

@@ -1,0 +1,25 @@
+.navbar-custom {
+    background-color: #873cb3;
+  }
+
+  .nav-dropdown{
+    color: white;
+    background-color: #873cb3;
+}
+.button{
+  color: white;
+  background-color: #873cb3;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center
+ }
+ div {
+  text-align: justify;
+  text-justify: inter-word;
+}

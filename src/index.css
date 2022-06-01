@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar-custom {
+  background-color: #873cb3;
+}
+.Post{
+  max-width: 800px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+i{
+  cursor: pointer;
+}
+image{
+  text-align: center;
+}
