@@ -13,7 +13,7 @@ const { body, validationResult } = require('express-validator');
 
 // app.get('/api', (req, res) => res.send('Its working!'));
 
-router.get('/fetchemployee', async (req, res) => {
+router.get('https://new-project-hotel.herokuapp.com/fetchemployee', async (req, res) => {
     try {
         const employee = await Employee.find({});
         res.json(employee)
