@@ -22,7 +22,7 @@ router.get('/fetchroom', async (req, res) => {
 
 
 
-      router.post('https://new-project-hotel.herokuapp.com/createroom', [
+      router.post('/createroom', [
         body('name', 'Enter a valid name').isLength({ min: 3 }),], async  (req, res) => {
         try {
             // const { name, email, password } = req.body;
@@ -48,7 +48,7 @@ router.get('/fetchroom', async (req, res) => {
 
 
 //           // ROUTE 4: Delete an existing employee using: DELETE "/api/notes/deletenote". Login required
-router.delete('https://new-project-hotel.herokuapp.com/deleteroom/:id',  async (req, res) => {
+router.delete('/deleteroom/:id',  async (req, res) => {
     try {
         // Find the note to be delete and delete it
         // let employee = await Employee.findById(req.params.id);
