@@ -20,10 +20,10 @@ app.use(express.json())
 // Available Routes
 // app.use('/api/auths', require('./routes/auths'));
 // app.use('/api/notes', require('./routes/notes') );
-app.use('https://new-project-hotel.herokuapp.com/api/employeeAuth', require('./Routes/employeeAuth'));
-app.use('https://new-project-hotel.herokuapp.com/api/guestRoute', require('./Routes/guestRoute'));
-app.use('https://new-project-hotel.herokuapp.com/api/roomRoute', require('./Routes/roomRoute'));
-app.use('https://new-project-hotel.herokuapp.com/api/hkRoute', require('./Routes/hkRoute'));
+app.use('/api/employeeAuth', require('./Routes/employeeAuth'));
+app.use('/api/guestRoute', require('./Routes/guestRoute'));
+app.use('/api/roomRoute', require('./Routes/roomRoute'));
+app.use('/api/hkRoute', require('./Routes/hkRoute'));
 
 
 
