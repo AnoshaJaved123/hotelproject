@@ -22,7 +22,7 @@ app.use(express.json())
 // app.use('/api/notes', require('./routes/notes') );
 app.use('https://new-project-hotel.herokuapp.com/api/employeeAuth', require('./Routes/employeeAuth'));
 app.use('https://new-project-hotel.herokuapp.com/api/guestRoute', require('./Routes/guestRoute'));
-app.use('https://new-project-hotel.herokuapp.com/api/api/roomRoute', require('./Routes/roomRoute'));
+app.use('https://new-project-hotel.herokuapp.com/api/roomRoute', require('./Routes/roomRoute'));
 app.use('https://new-project-hotel.herokuapp.com/api/hkRoute', require('./Routes/hkRoute'));
 
 
